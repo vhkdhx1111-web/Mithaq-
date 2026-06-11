@@ -30,6 +30,7 @@ def push(p: Payload):
     STATE = p
     return {"ok": True, "count": len(p.signals)}
 
-@app.get("/signals")
+@app.get("/")
+
 def get():
     return STATE
